@@ -15,6 +15,10 @@ body {
   padding: 18px;
   display: flex;
   align-items: center;
+  position: fixed;
+  transition: top 0.4s;
+  top: 0;
+  z-index: 1;
 }
 .header__logo,a,img {
   width: 150px;
@@ -119,8 +123,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 0;
-  padding: 0;
+  padding: 80px 0 0 0;
   position: absolute;
+  margin-top: -370px;
 }
 .back h1{
   color: white;
@@ -215,6 +220,10 @@ body {
   white-space: nowrap;
   margin-left: 80px;
   width: 1310px;
+  display: block;
+}
+#card__theater{
+  display: none;
 }
 .card__block{
   display: inline-block;
