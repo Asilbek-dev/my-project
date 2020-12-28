@@ -1,0 +1,206 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.header {
+    width: 100%;
+    height: 24px;
+    background-color: #032541;
+    padding: 22px 18px 18px 18px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    transition: top 0.4s;
+    top: 0;
+    z-index: 1;
+  }
+  .header__logo a img {
+    width: 150px;
+    height: 22px;
+    margin-left: 145px;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+  .header__left{
+    display: flex;
+    justify-content: flex-start;
+    width: 500px;
+  }
+  .header__links{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -70px;
+  }
+  .header__links li a{
+    list-style: none;
+    margin-right: 30px;
+    padding: 10px 0;
+  }
+  .header__link{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+  }
+  .header__link a{
+    text-decoration: none;
+  }
+  .header__link-box{
+    display: none;
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    position: absolute;
+    margin-top: 10px;
+    padding: 12px;
+    z-index: 1;
+  }
+  .header__link-box li{
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+  }
+  .header__link-box li a{
+    color: black;
+    text-decoration: none;
+  }
+  .header__link-box li:hover{
+    background-color: rgb(243, 241, 240);
+  }
+  .header__link:hover .header__link-box{
+    display: block;
+  }
+  .header__right{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    margin-left: 180px;
+  }
+  .fa-plus{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    margin-right: 30px;
+  }
+  .header__button{
+    border: 1px solid #FF9647;
+    background: none;
+    width: 32px;
+    height: 30px;
+    color: #FF9647;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 30px;
+  }
+  .header__button:hover{
+    background-color: #FF9647;
+    color: #032541;
+  }
+  .fa-search{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    color: #09B5E1;
+  }
+  .header__right,a{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 30px;
+  }
+.menu{
+    margin-top: 80px;
+    list-style: none;
+    display: flex;
+    margin-left: 500px;
+}
+.menu__link a{
+    color: black;
+    padding: 2px 2px 20px 2px;
+    font-size: 14px;
+}
+.menu__link-box{
+    list-style: none;
+    background-color:white;
+    border-radius: 4px;
+    border: 0.5px solid rgb(243, 238, 238) ;
+    width: 200px;
+    margin: auto;
+    padding: 12px 0;
+    text-align: left;
+    display: none;
+    margin-top: 10px;
+    position: absolute;
+}
+.menu__link-box li{
+    padding: 3px 12px;
+    text-align: justify;
+}
+.menu__link-box li:hover{
+    background-color: rgb(238, 231, 231);
+}
+.menu__link:hover .menu__link-box{
+    display: block;
+}
+.menu__link-box li span{
+    color: darkgrey;
+}
+.box__link:hover{
+    background-color: #01B4E4;
+    color: white;
+}
+.box__link:hover .fa-caret-right{
+    color: white;
+}
+.box__link-box{
+    list-style: none;
+    background-color:white;
+    border-radius: 4px;
+    border: 0.5px solid rgb(238, 232, 232) ;
+    width: 300px;
+    margin: auto;
+    padding: 4px 0;
+    text-align: left;
+    display: none;
+    position: absolute;
+    transform: translate(189px,-30px);
+}
+.box__link-box li a i{
+    color: black;
+}
+.box__link-box li span{
+    color: darkgrey;
+}
+.menu__line{
+    width: 70px;
+    border: none;
+    height: 4px;
+    background-color:#01B4E4;
+    margin-left: 542px;
+    margin-bottom: 1px;
+}
+.box__link:hover .box__link-box{
+    display: block;
+}
+.card{
+    height: 600px;
+    width: 1200px;
+    background-image: url(./images/1.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card__img{
+    width: 100%;
+    height: 100px;
+    background-image: url(./images/1.jpg);
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(5.49%, 5.49%, 7.84%, 1.00) 150px,
+     rgba(5.49%, 5.49%, 7.84%, 0.84) 100%);
+}
