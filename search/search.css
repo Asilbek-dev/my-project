@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    width: 1480px;
+  }
+  .header {
+    width: 100%;
+    height: 28px;
+    background-color: #032541;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    transition: top 0.4s;
+    top: 0;
+    z-index: 1;
+  }
+  .header__logo a img {
+    width: 150px;
+    height: 22px;
+    margin-left: 150px;
+    cursor: pointer;
+  }
+  .header__left{
+    display: flex;
+    justify-content: flex-start;
+    width: 500px;
+  }
+  .header__links{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -50px;
+  }
+  .header__links li a{
+    list-style: none;
+    margin-right: 30px;
+    padding: 10px 0;
+  }
+  .header__link{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+  }
+  .header__link a{
+    text-decoration: none;
+  }
+  .header__link-box{
+    display: none;
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    position: absolute;
+    margin-top: 10px;
+    padding: 12px;
+    z-index: 1;
+  }
+  .header__link-box li{
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+  }
+  .header__link-box li a{
+    color: black;
+    text-decoration: none;
+  }
+  .header__link-box li:hover{
+    background-color: rgb(243, 241, 240);
+  }
+  .header__link:hover .header__link-box{
+    display: block;
+  }
+  .header__right{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    margin-left: 190px;
+  }
+  .fa-plus{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    margin-right: 30px;
+  }
+  .header__button{
+    border: 1px solid white;
+    background: none;
+    width: 32px;
+    height: 30px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 30px;
+  }
+  .header__button:hover{
+    background-color: white;
+    color: black;
+  }
+  .fa-search{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    color: #09B5E1;
+  }
+  .header__right,a{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 30px;
+  }
+  .search{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+    /* position: fixed; */
+  }
+  .search .fa-search{
+    color: black;
+    font-size: 16px;
+  }
+  hr{
+    width: 1532px;
+    color: #AFAFAF;
+  }
+  .search input{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    width: 1160px;
+    color: #AFAFAF;
+}
+.fa-times{
+    color: #AFAFAF;
+    display: none;
+    cursor: pointer;
+}
+.search span i{
+    display: none;
+}
+.card{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 150px;
+    margin-top: 20px;
+    justify-content: flex-start;
+    /* margin-top: 150px; */
+}
+.card__right{
+    display: block;
+}
+.card__right-name{
+    color: white;
+    background-color: #01B4E4;
+    width: 232px;
+    padding: 1rem 0.5rem;
+    font-size: 18px;
+    border-radius: 6px 6px 0 0;
+}
+.card__right-links{
+    width: 246px;
+    border: 1px solid #AFAFAF;
+    border-radius: 0 0 6px 6px;
+    padding: 10px 0;
+}
+.card__right-link{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0.5rem;
+}
+.card__right-link a{
+    color: black;
+}
+.number{
+    padding: 5px 10px;
+    background-color: #EBEBEB;
+    border-radius: 6px;
+    text-align: center;
+}
+.card__right-link:hover{
+    background-color: #EBEBEB;
+}
+.card__right-link:hover .number{
+    background-color: white;
+}
+.card__left{
+    display: block;
+    margin-left: 20px;
+}
+.card__block{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+.card__box{
+    width: 80px;
+    height: 80px;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+.card__box img{
+    width: 100%;
+    border-radius: 6px;
+}
+.card__box-name h4{
+    margin-bottom: -10px;
+}
